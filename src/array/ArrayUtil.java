@@ -54,4 +54,18 @@ public class ArrayUtil {
             end--;
         }
     }
+
+    public int findMinimum(int[] arr) {
+        int min = arr[0];
+
+        if (arr == null || arr.length == 0) {
+            throw new IllegalArgumentException("Valid input");
+        }
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+        return (min);
+    }
 }

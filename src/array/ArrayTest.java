@@ -18,6 +18,11 @@ public class ArrayTest {
         arrayUtil.printArray(numbers);
         arrayUtil.reverse(numbers, 0, numbers.length - 1);
         arrayUtil.printArray(numbers);
+        System.out.println();
+
+        System.out.println("=== 4º ===");
+        int[] arr = {5, 9, 3, 15, 1, 2};
+        System.out.println(arrayUtil.findMinimum(arr));
     }
 
 }
